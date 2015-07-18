@@ -67,7 +67,7 @@ For your convenience, a ready to mount ISO is included in the ISO directory.
 Use an i686 virtual machine of your choice to mount the ISO and boot our OS. 
    
    
-##features
+##Features
 
 Our operating system utilizes the existing features in the GeekOS kernel to deliver the following features:
 
@@ -78,7 +78,7 @@ the provided process model to include such states as new state. Also, when the
 long term scheduler creates new kernel threads for a submitted job these are 
 inserted into a new process queue (which we added) and when all new jobs have received 
 a kernel thread   then all new threads are dequeued from the new queue and inserted into 
-the ready queue, in a single atomic instruction. See: include/60-330/geekos/thread.h
+the ready queue, in a single atomic instruction. See: `include/60-330/geekos/thread.h`
 
 Furthermore, GEEKOS manages the wait queue using the work queue process. This is defined 
 by GEEKOS in the workqueue.c and work queue process is constantly running to manage I/O 
@@ -88,7 +88,7 @@ interrupts and wait queues.
 
 Our team's job submission header file contains information such as priority of the job and 
 CPU burst time which is useful information to our scheduler. Our header file is located in:
-   include/60-330/job.h
+`include/60-330/job.h`
 
 ###Machine Architecture
 
