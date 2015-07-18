@@ -13,7 +13,7 @@ This version of GeekOS features contributions from
 * Nik Steel
 * Todd Baert
 * Chris Zygowski
-* and Aaron Sarson
+* and Aaron Sarson.
 
 We developed this version as a final project for an introduction to operating
 systems course at the University of Windsor.  Our original source code and 
@@ -185,7 +185,7 @@ the schedulers are working.
 
 
 Copyright (C) 2014-2015, Nik Steel, Todd Baert, Chris Zygowski, and Aaron Sarson 
-(for our contributions in the src/60-330 directory)
+(for our contributions in the src/60-330 and include/60-330 directories)
 Copyright (C) 2001-2008, David H. Hovemeyer <david.hovemeyer@gmail.com>
 (for all other code)
 
