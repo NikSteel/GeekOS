@@ -18,7 +18,7 @@ This version of GeekOS features contributions from
 We developed this version as a final project for an introduction to operating
 systems course at the University of Windsor.  Our original source code and 
 sections of the core GeekOS code that we modified are set apart in the src/60-330
-directory and documented with comments.
+and include/60-330 directories and are documented with comments.
 
 The original GeekOS base kernel upon which our project is based may be found at 
 
@@ -36,28 +36,28 @@ that we followed to build our cross compiler may be found here:
 
 To build
 
-   cd build/x86/
-   make
+	cd build/x86/
+	make
 
 Note that the make file will compile the code and write it to an iso
 called boot.iso in the working directory using grub-mkrescue.
    
 Run with qemu
 
-   qemu -kernel kernel/geekos.exe
+	qemu -kernel kernel/geekos.exe
 
 or
 
-   qemu -cdrom boot.iso
+	qemu -cdrom boot.iso
 
 and to test hard drive recognition create an empty device image,
 e.g. `dd if=/dev/zero of=./hda.img bs=512 count=100000` and
 
-   qemu -kernel kernel/geekos.exe -hda hda.img
+	qemu -kernel kernel/geekos.exe -hda hda.img
 
 Make bootable usb-stick
 
-   sudo dd if=boot.iso of=/dev/sdb && sync
+	sudo dd if=boot.iso of=/dev/sdb && sync
 
 and replace `sdb` as needed 
 
@@ -106,8 +106,8 @@ GEEKOS comes built with excellent device management; therefore, our project didn
 structures provided.
 
 The GEEKOS incorporates many of the basic requirements for a PCB into its thread structure; thus,
- we simply extended the thread structure (thread.h )to incorporate other PCB features such as a 
- process ID, priority, and time statistics.
+we simply extended the thread structure (thread.h )to incorporate other PCB features such as a 
+process ID, priority, and time statistics.
 
 A new job is allocated a kernel thread and inserted into the new thread queue (which our group 
 implemented). When all new jobs have been allocated a kernel thread, the long term schedules moves 
@@ -174,7 +174,8 @@ threads to a wait queue and dequeues them when the lock is freed.
 User Interface and Reporting
 
 Our OS has a command line interface with a menu. The menu can be seen by viewing the file: 
-   src/60-330/menu.c
+
+	src/60-330/menu.c
 
 Our OS also displays information about the current running process including when a process is started 
 and running. The process ID and priority are also displayed to the terminal making it easy to track how 
