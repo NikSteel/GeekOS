@@ -27,6 +27,8 @@ The original GeekOS base kernel upon which our project is based may be found at
 
 ##Build
 
+###Compile from source
+
 We used a gcc i686 cross compiler to compile our source code.  The steps
 that we followed to build our cross compiler may be found here:
 
@@ -58,8 +60,13 @@ Make bootable usb-stick
    sudo dd if=boot.iso of=/dev/sdb && sync
 
 and replace `sdb` as needed 
-   
 
+###Ready to use ISO
+   
+For your convenience, a ready to mount ISO is included in the ISO directory.  
+Use an i686 virtual machine of your choice to mount the ISO and boot our OS. 
+   
+   
 ##features
 
 Our operating system utilizes the existing features in the GeekOS kernel to deliver the following features:
