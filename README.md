@@ -171,11 +171,10 @@ We demonstrate the effectiveness of the mutex in controlling a group of competin
 of multiple threads attempting to write a poem concurrently.  The mutex automatically moves the competing 
 threads to a wait queue and dequeues them when the lock is freed.
 
-User Interface and Reporting
+###User Interface and Reporting
 
 Our OS has a command line interface with a menu. The menu can be seen by viewing the file: 
-
-	src/60-330/menu.c
+`src/60-330/menu.c`
 
 Our OS also displays information about the current running process including when a process is started 
 and running. The process ID and priority are also displayed to the terminal making it easy to track how 
