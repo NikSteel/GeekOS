@@ -80,39 +80,33 @@ Our operating system features the following:
 
 The GeekOS command line demonstrates how process synchronization behaves with a series of games:
 
-<img src="docs/img/synchronization.png" alt="Process synchronization menu." 
-   style="width: 480; height: 165">
+![Process synchronization menu.](docs/img/synchronization.png)
 
 Select Synchronization and Peterson's Solution in the GeekOS menu, and you will see a pair of processes
 that use Peterson's Solution to the critical section problem to exchange control in a tic tac toe game.
 
-<img src="docs/img/tictactoe.gif" alt="Peterson's solution demonstrated by tic tac toe game." 
-   style="width: 480; height: 260">
+![Peterson's solution demonstrated by tic tac toe game.](docs/img/tictactoe.gif)
 
 Select Synchronization and Mutex in the GeekOS menu, and you will see a group of 
 poem-writing processes attempt to write a poem into a shared memory location at the same time. 
 The late arriving processes are blocked by the earliest arriving one, which has control of the mutex lock.
 
-<img src="docs/img/poems.gif" alt="Mutex locks demonstrated by poem writing competition." 
-   style="width: 480; height: 260">
+![Mutex locks demonstrated by poem writing competition.](docs/img/poems.gif)
 
 We provide four process scheduling algorithms and four job submission scenarios:
 
-<img src="docs/img/scheduling.png" alt="Process scheduling menu." 
-   style="width: 480; height: 271">
+![Process scheduling menu.](docs/img/scheduling.png)
 
 The user can see how the processes transition between the five process states.
 
-<img src="docs/img/scheduler.gif" alt="Example of running the process scheduling demo." 
-   style="width: 480; height: 260">
+![Example of running the process scheduling demo.](docs/img/scheduler.gif)
 
 Runtime statistics are also provided and may be used to compare the performance of each
 scheduling algorithm given a particular job submission scenario:
 
-<img src="docs/img/runtime_stats.png" alt="Runtime statistics" 
-   style="width: 480; height: 143">
+![Runtime statistics](docs/img/runtime_stats.png)
 
-You can read more about the inner workings of these in `/docs/features.md`.
+You can read more about the inner workings of these [here](docs/features.md).
 
 
 ##Copyright, License, and Disclaimer
